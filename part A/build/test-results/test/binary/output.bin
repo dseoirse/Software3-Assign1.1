@@ -1,0 +1,14 @@
+getID
+setID
+setCourses
+setModules
+	getName
+getUsername
+getCourses
+	getAge
+
+getDOB
+getModules
+	setName
+setAge
+setDOB
