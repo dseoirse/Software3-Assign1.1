@@ -6,6 +6,8 @@
 package gradleproject2;
 
 import gradleproject1.Student;
+import gradleproject1.CourseProg;
+import gradleproject1.Module;
 import java.util.ArrayList;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -191,9 +193,9 @@ public class StudentTest {
     @Test
     public void testSetCourses() {
         System.out.println("setCourses");
-        ArrayList<String> courses = new ArrayList<String>();
-        courses.add("BCT");
-        courses.add("ECT");
+        ArrayList<CourseProg> courses = new ArrayList<CourseProg>();
+        CourseProg c1 = new CourseProg();
+        courses.add(c1);      
         Student instance = new Student();
         instance.setCourses(courses);
         assertEquals(courses,instance.getCourses());
@@ -209,11 +211,11 @@ public class StudentTest {
     public void testGetCourses() {
         System.out.println("getCourses");
         Student instance = new Student();
-        ArrayList<String> expResult = new ArrayList<String>();
-        expResult.add("BCT");
-        expResult.add("ECT");
+        ArrayList<CourseProg> expResult = new ArrayList<CourseProg>();
+        CourseProg c1 = new CourseProg();
+        expResult.add(c1);  
         instance.setCourses(expResult);
-        ArrayList<String> result = instance.getCourses();
+        ArrayList<CourseProg> result = instance.getCourses();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
@@ -225,9 +227,11 @@ public class StudentTest {
     @Test
     public void testSetModules() {
         System.out.println("setModules");
-        ArrayList<String> modules = new ArrayList<String>();
-        modules.add("CT101");
-        modules.add("CT102");
+        ArrayList<Module> modules = new ArrayList<Module>();
+        Module m1 = new Module();
+        Module m2 = new Module();
+        modules.add(m1);
+        modules.add(m2);
         Student instance = new Student();
         instance.setModules(modules);
         assertEquals(modules,instance.getModules());
@@ -242,11 +246,13 @@ public class StudentTest {
     public void testGetModules() {
         System.out.println("getModules");
         Student instance = new Student();
-        ArrayList<String> expResult = new ArrayList<String>();
-        expResult.add("CT101");
-        expResult.add("CT102"); 
+        ArrayList<Module> expResult = new ArrayList<Module>();
+        Module m1 = new Module();
+        Module m2 = new Module();
+        expResult.add(m1);
+        expResult.add(m2);
         instance.setModules(expResult);
-        ArrayList<String> result = instance.getModules();
+        ArrayList<Module> result = instance.getModules();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");

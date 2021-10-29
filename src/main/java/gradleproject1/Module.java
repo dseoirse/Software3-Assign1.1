@@ -12,6 +12,10 @@ import java.util.ArrayList;
  * @author dseok
  */
 public class Module {
+
+    public Module() {
+    }
+    
     private String Name;
     private String Id;
     private ArrayList <Student> students;

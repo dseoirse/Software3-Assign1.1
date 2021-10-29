@@ -18,8 +18,8 @@ public class Student {
     private String dob;
     private int id;
     //private String username;
-    private ArrayList <String> courses;
-    private ArrayList <String> modules;
+    private ArrayList <CourseProg> courses;
+    private ArrayList <Module> modules;
     
     
     public String getUsername(){
@@ -63,19 +63,19 @@ public class Student {
 //        this.username = username;
 //    }
 
-    public ArrayList <String> getCourses() {
+    public ArrayList <CourseProg> getCourses() {
         return courses;
     }
 
-    public void setCourses(ArrayList <String> courses) {
+    public void setCourses(ArrayList <CourseProg> courses) {
         this.courses = courses;
     }
 
-    public ArrayList <String> getModules() {
+    public ArrayList <Module> getModules() {
         return modules;
     }
 
-    public void setModules(ArrayList <String> modules) {
+    public void setModules(ArrayList <Module> modules) {
         this.modules = modules;
     }
 
