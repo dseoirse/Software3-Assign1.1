@@ -1,0 +1,8 @@
+setAssiCourse
+getId
+setId
+setStudents
+getStudents
+	getName
+getAssiCourse
+		setName

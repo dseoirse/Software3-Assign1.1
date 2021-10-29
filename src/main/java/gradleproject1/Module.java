@@ -14,8 +14,8 @@ import java.util.ArrayList;
 public class Module {
     private String Name;
     private String Id;
-    private ArrayList <String> students;
-    private ArrayList <String> assCourse;
+    private ArrayList <Student> students;
+    private ArrayList <String> assiCourse;
     
     
     public String getName() {
@@ -34,20 +34,20 @@ public class Module {
         this.Id = Id;
     }
 
-    public ArrayList<String> getStudents() {
+    public ArrayList<Student> getStudents() {
         return students;
     }
 
-    public void setStudents(ArrayList<String> students) {
+    public void setStudents(ArrayList<Student> students) {
         this.students = students;
     }
 
-    public ArrayList<String> getAssCourse() {
-        return assCourse;
+    public ArrayList<String> getAssiCourse() {
+        return assiCourse;
     }
 
-    public void setAssCourse(ArrayList<String> assCourse) {
-        this.assCourse = assCourse;
+    public void setAssiCourse(ArrayList<String> assCourse) {
+        this.assiCourse = assCourse;
     }
 
     

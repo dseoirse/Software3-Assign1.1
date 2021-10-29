@@ -1,6 +1,6 @@
-gradleproject2/Module.java
+gradleproject1/Module.java
  gradleproject1.Module
-gradleproject2/Student.java
+gradleproject1/Student.java
  gradleproject1.Student
-gradleproject2/CourseProg.java
- gradleproject2.CourseProg
+gradleproject1/CourseProg.java
+ gradleproject1.CourseProg

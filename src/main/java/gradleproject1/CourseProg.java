@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gradleproject2;
+package gradleproject1;
 
 import java.util.ArrayList;
 import org.joda.time.DateTime;
@@ -14,8 +14,8 @@ import org.joda.time.DateTime;
  */
 public class CourseProg {
     private String name;
-    private ArrayList<String> moudles;
-    private ArrayList<String> students;
+    private ArrayList<Module> moudles;
+    private ArrayList<Student> students;
     private DateTime startDate;
     private DateTime endDate;
 
@@ -27,19 +27,19 @@ public class CourseProg {
         this.name = name;
     }
 
-    public ArrayList<String> getMoudles() {
+    public ArrayList<Module> getMoudles() {
         return moudles;
     }
 
-    public void setMoudles(ArrayList<String> moudles) {
+    public void setMoudles(ArrayList<Module> moudles) {
         this.moudles = moudles;
     }
 
-    public ArrayList<String> getStudents() {
+    public ArrayList<Student> getStudents() {
         return students;
     }
 
-    public void setStudents(ArrayList<String> students) {
+    public void setStudents(ArrayList<Student> students) {
         this.students = students;
     }
 
