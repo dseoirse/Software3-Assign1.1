@@ -24,6 +24,7 @@ import static org.junit.Assert.*;
 public class CourseProgTest {
     
     public CourseProgTest() {
+        System.out.println(" ");
     }
     
     @BeforeClass
@@ -124,7 +125,7 @@ public class CourseProgTest {
         Student s2 = new Student();
         expResult.add(s1);
         expResult.add(s2);
- 
+        instance.setStudents(expResult);
         ArrayList<Student> result = instance.getStudents();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
